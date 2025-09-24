@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sunrise Cafe — Contact</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="container">
+            <h1>Contact Us</h1>
+            <nav aria-label="contact">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section>
+            <h2>Visit Us</h2>
+            <p>123 Market Street, Citytown</p>
+            <p>Open: Mon-Fri 7:30–18:00</p>
+            <!-- simple embedded google maps example (static) -->
+            <iframe title="map" src="https://maps.google.com/maps?q=New%20York%20City&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="width:100%;height:220px;border:0;"></iframe>
+            </section>
+
+            <section>
+            <h2>Reserve a Table</h2>
+            <form action="/reserve" method="post">
+                <label for="rname">Your name</label>
+                <input id="rname" name="name" required>
+
+                <label for="rdate">Date & time</label>
+                <input id="rdate" name="datetime" type="datetime-local" required>
+
+                <label for="rpeople">Number of people</label>
+                <input id="rpeople" name="people" type="number" min="1" max="12" value="2">
+
+                <label for="rphone">Phone</label>
+                <input id="rphone" name="phone" type="tel" placeholder="+91...">
+
+                <button class="primary" type="submit">Reserve</button>
+            </form>
+            </section>
+        </main>
+
+        <footer class="container">
+            <p class="small">Phone: +91 12345 67890 — Email: <a href="mailto:hello@sunrisecafe.example">hello@sunrisecafe.example</a></p>
+        </footer>
+    </body>
+</html>
