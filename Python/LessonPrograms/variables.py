@@ -1,4 +1,4 @@
-# Python Variables Demo
+# Python Program: Variables
 # This program shows how variables work in Python
 # Only basics: declaration, naming rules, reassignment, and output
 

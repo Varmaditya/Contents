@@ -1,4 +1,4 @@
-# Float Data Type
+# Python Program: Float Data Type
 
 import sys
 

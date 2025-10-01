@@ -1,4 +1,4 @@
-# Integer Data Type
+# Python Program: Integer Data Type
 
 import sys
 
