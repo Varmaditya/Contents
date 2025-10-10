@@ -1,7 +1,7 @@
 # Arithmetic Operators in Python
 
 # ---------------- Introduction ----------------
-print("===== ARITHMETIC OPERATORS IN PYTHON =====\n")
+print("\n===== ARITHMETIC OPERATORS IN PYTHON =====")
 print("""
 Arithmetic operators are used to perform mathematical operations
 like addition, subtraction, multiplication, division, etc.
@@ -16,43 +16,43 @@ print("a =", a)
 print("b =", b)
 print("\n---------------- OPERATIONS ----------------\n")
 
-# 1️⃣ Addition (+)
+# 1️. Addition (+)
 add_result = a + b
 print("1. Addition (+)")
 print("   Expression: a + b =", add_result)
 print("   Meaning   : Adds two numbers.\n")
 
-# 2️⃣ Subtraction (-)
+# 2. Subtraction (-)
 sub_result = a - b
 print("2. Subtraction (-)")
 print("   Expression: a - b =", sub_result)
 print("   Meaning   : Subtracts right operand from left.\n")
 
-# 3️⃣ Multiplication (*)
+# 3️. Multiplication (*)
 mul_result = a * b
 print("3. Multiplication (*)")
 print("   Expression: a * b =", mul_result)
 print("   Meaning   : Multiplies two numbers.\n")
 
-# 4️⃣ Division (/)
+# 4️. Division (/)
 div_result = a / b
 print("4. Division (/)")
 print("   Expression: a / b =", div_result)
 print("   Meaning   : Divides left by right, always returns float.\n")
 
-# 5️⃣ Floor Division (//)
+# 5️. Floor Division (//)
 floor_result = a // b
 print("5. Floor Division (//)")
 print("   Expression: a // b =", floor_result)
 print("   Meaning   : Divides and returns only integer part (floor value).\n")
 
-# 6️⃣ Modulus (%)
+# 6️. Modulus (%)
 mod_result = a % b
 print("6. Modulus (%)")
 print("   Expression: a % b =", mod_result)
 print("   Meaning   : Returns remainder of division.\n")
 
-# 7️⃣ Exponent (**)
+# 7. Exponent (**)
 exp_result = a ** b
 print("7. Exponent (**)")
 print("   Expression: a ** b =", exp_result)

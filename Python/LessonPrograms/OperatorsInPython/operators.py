@@ -1,6 +1,6 @@
 # Operators in Python
 # ---------------- Introduction ----------------
-print("===== OPERATORS IN PYTHON =====")
+print("\n===== OPERATORS IN PYTHON =====")
 print("""
 Operators are special symbols used to perform operations on variables and values.
 Example: +, -, *, /, ==, and, or, etc.
