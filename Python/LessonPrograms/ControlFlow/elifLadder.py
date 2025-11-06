@@ -60,4 +60,3 @@ print("""
 → Helps write clean and structured decision-making code.
 """)
 
-print("Next, we'll begin Looping Statements starting with the 'while' loop!")

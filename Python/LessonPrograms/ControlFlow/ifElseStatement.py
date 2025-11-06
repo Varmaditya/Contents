@@ -12,7 +12,7 @@ if condition:
 else:
     statement(s)     # executed if condition is False
 
-Only one of the two blocks will execute based on the condition.
+→ Only one of the two blocks will execute based on the condition.
 """)
 
 # ---------------- Example 1: Even or Odd Check ----------------
@@ -79,5 +79,3 @@ print("""
 → Only one block runs at a time.
 → Indentation defines which statements belong to each block.
 """)
-
-print("Next, we'll learn about the 'if-elif-else' ladder for multiple conditions!")

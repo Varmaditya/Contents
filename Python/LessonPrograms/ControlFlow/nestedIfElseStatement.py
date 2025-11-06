@@ -59,4 +59,3 @@ print("""
 → Indentation defines which block belongs to which condition.
 """)
 
-print("Next, we'll study the 'if-elif-else' ladder for multiple separate conditions!")

@@ -7,9 +7,9 @@ Python allows writing conditional statements in a single line using **short-hand
 This helps make the code more compact and readable when only one statement needs to be executed.
 
 TYPES:
-1️⃣ Single-line if statement
-2️⃣ Single-line if-else statement (Ternary Expression)
-3️⃣ Nested short-hand if (multiple inline conditions)
+1. Single-line if statement
+2. Single-line if-else statement (Ternary Expression)
+3. Nested short-hand if (multiple inline conditions)
 """)
 
 # ---------------- Syntax ----------------
@@ -58,4 +58,3 @@ Examples:
 → category = "Child" if age<13 else "Teen" if age<20 else "Adult"
 """)
 
-print("Next, we’ll begin Looping Statements starting with the WHILE loop! 🔁")

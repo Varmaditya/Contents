@@ -12,9 +12,9 @@ SYNTAX:
 if condition:
     statement(s)
 
-- The condition is checked first.
-- If the condition is True → the indented block runs.
-- If the condition is False → the block is skipped.
+→ The condition is checked first.
+→ If the condition is True → the indented block runs.
+→ If the condition is False → the block is skipped.
 """)
 
 # ---------------- Example 1: Basic IF Statement ----------------
@@ -79,4 +79,3 @@ print("""
 → Multiple independent IF statements can be used for multiple checks.
 """)
 
-print("Next, we'll study the 'if-else' statement for two-way decisions!")
