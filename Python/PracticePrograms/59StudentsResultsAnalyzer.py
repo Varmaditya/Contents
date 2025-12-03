@@ -12,17 +12,17 @@ for name, marks in students.items():
     print("\nStudent:", name)
 
     total = sum(marks)
-    avg = total / len(marks)
+    average = total / len(marks)
 
     print("Marks:", marks)
-    print("Average:", avg)
+    print("Average:", average)
 
     # grading using conditions
-    if avg >= 90:
+    if average >= 90:
         grade = "A+"
-    elif avg >= 75:
+    elif average >= 75:
         grade = "A"
-    elif avg >= 60:
+    elif average >= 60:
         grade = "B"
     else:
         grade = "C"

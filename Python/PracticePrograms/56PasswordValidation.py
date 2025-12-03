@@ -2,17 +2,17 @@
 
 print("===== PASSWORD VALIDATOR =====")
 
-pwd = input("Enter password: ")
+passwor = input("Enter password: ")
 
 # Validation rules
-has_digit = any(ch.isdigit() for ch in pwd)
-has_upper = any(ch.isupper() for ch in pwd)
-has_lower = any(ch.islower() for ch in pwd)
-has_special = any(ch in "!@#$%^&*()-_=+[]{};:/?,.<>" for ch in pwd)
-has_length = len(pwd) >= 8
+hasDigit = any(ch.isdigit() for ch in passwor)
+hasUpper = any(ch.isupper() for ch in passwor)
+hasLower = any(ch.islower() for ch in passwor)
+hasSpecial = any(ch in "!@#$%^&*()-_=+[]{};:/?,.<>" for ch in passwor)
+hasLength = len(passwor) >= 8
 
 # Check all conditions
-if has_digit and has_upper and has_lower and has_special and has_length:
+if hasDigit and hasUpper and hasLower and hasSpecial and hasLength:
     print("Password is strong and valid.")
 else:
     print("Weak password. Must include:")

@@ -12,12 +12,12 @@ inventory = {
 print("Current Stock:\n", inventory)
 
 item = input("\nEnter item to purchase: ").title()
-qty = int(input("Enter quantity needed: "))
+quantity = int(input("Enter quantity needed: "))
 
 # Check stock availability
 if item in inventory:
-    if qty <= inventory[item]:
-        inventory[item] -= qty
+    if quantity <= inventory[item]:
+        inventory[item] -= quantity
         print("\nOrder Confirmed!")
         print("Remaining Stock:", inventory[item])
     else:

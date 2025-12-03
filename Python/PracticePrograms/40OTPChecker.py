@@ -2,11 +2,11 @@
 
 print("===== OTP VERIFICATION =====")
 
-correct_otp = "5678"
+correctOtp = "5678"
 attempt = ""
 
 # Keep asking until matching OTP
-while attempt != correct_otp:
+while attempt != correctOtp:
     attempt = input("Enter OTP: ")
 
 print("OTP verified successfully.")

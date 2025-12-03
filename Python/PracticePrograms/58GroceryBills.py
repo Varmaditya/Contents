@@ -9,15 +9,15 @@ cart = [
     ("Chocolate", 40, 3)
 ]
 
-total_bill = 0
+totalBill = 0
 
 print("Items Purchased:\n")
 
 # item → (name, price_per_unit, quantity)
 for item, price, qty in cart:
     cost = price * qty
-    total_bill += cost
+    totalBill += cost
 
     print(f"{item}: {qty} pcs x ₹{price} = ₹{cost}")
 
-print("\nTotal Bill Amount:", total_bill)
+print("\nTotal Bill Amount:", totalBill)

@@ -6,7 +6,7 @@ print("===== EVEN OR ODD CHECKER =====")
 num = int(input("Enter a number: "))
 
 # Checking using modulus operator
-is_even = (num % 2 == 0)
+isEven = (num % 2 == 0)
 
 # Logical output
-print("Is the number even?", is_even)
+print("Is the number even?", isEven)

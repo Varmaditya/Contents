@@ -13,9 +13,9 @@ for i in range(count):
     products[name] = price
 
 # Find max price
-max_price = max(products.values())
+maxPrice = max(products.values())
 
 # Find product with max price
 for name, price in products.items():
-    if price == max_price:
+    if price == maxPrice:
         print("\nCostliest Product:", name, "-", price)
