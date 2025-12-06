@@ -13,3 +13,17 @@ The game features a clean UI, sound effects, animations, and a scoreboard.
 ✔ Bonus rules for dice outcomes
 ✔ Themed UI with rounded buttons
 ✔ Winner declaration + reset option
+
+📁 Folder Structure
+DiceTournament/
+│── main.py           # UI + game flow
+│── dice.py           # Dice animation & logic
+│── assets/
+│    ├── dice1.png
+│    ├── dice2.png
+│    ├── dice3.png
+│    ├── dice4.png
+│    ├── dice5.png
+│    ├── dice6.png
+│    └── roll.wav     # (optional)
+└── README.md
