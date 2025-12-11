@@ -1,4 +1,4 @@
-// Program: Operator Precedence and Associativity in Java (Detailed)
+// Program: Operator Precedence and Associativity in Java
 
 public class PrecedenceAndAssociativity {
     public static void main(String[] args) {

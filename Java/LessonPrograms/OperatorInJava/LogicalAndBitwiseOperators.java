@@ -1,4 +1,4 @@
-// Program: Logical & Bitwise Operators in Java (Detailed)
+// Program: Logical & Bitwise Operators in Java
 
 public class LogicalAndBitwiseOperators {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-// Program: Ternary Operator in Java (Detailed)
+// Program: Ternary Operator in Java
 
 import java.util.Scanner;
 
