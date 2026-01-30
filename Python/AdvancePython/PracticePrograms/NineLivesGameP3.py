@@ -1,3 +1,5 @@
+# Program: Word guessing game
+
 import random
 
 lives = 9

@@ -1,3 +1,5 @@
+# Program: Animal Quiz with chances
+
 def check_guess(guess, answer):
     global score
     stillGuessing = True
