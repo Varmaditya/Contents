@@ -1,52 +1,54 @@
-// OBJECT ORIENTED PROGRAMMING (OOP) IN JAVA
-// ------------------------------------------
+# OBJECT ORIENTED PROGRAMMING (OOP) IN PYTHON
+# ---------------------------------------------
 
-class Student {
+print("\n===== BASIC OOP STRUCTURE =====")
 
-    // Class variable (shared by all objects)
-    static String schoolName = "Bright Future School";
+class Student:
 
-    // Instance variables
-    String name;
-    int age;
+    school_name = "Bright Future School"   # Class Variable
 
-    // Constructor
-    Student(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
+    # Constructor
+    def __init__(self, name, age):
+        self.name = name        # Instance Variable
+        self.age = age
 
-    // Instance method
-    void display() {
-        System.out.println("School: " + schoolName);
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-    }
+    # Instance Method
+    def display(self):
+        print("School:", Student.school_name)
+        print("Name:", self.name)
+        print("Age:", self.age)
 
-    // Static method
-    static void changeSchool(String newSchool) {
-        schoolName = newSchool;
-    }
-}
+    # Another Instance Method
+    def is_adult(self):
+        return self.age >= 18
 
-public class Main {
-    public static void main(String[] args) {
+    # Class Method
+    @classmethod
+    def change_school(cls, new_name):
+        cls.school_name = new_name
 
-        // Creating objects
-        Student s1 = new Student("Alice", 20);
-        Student s2 = new Student("Bob", 22);
+    # Static Method
+    @staticmethod
+    def course_info():
+        print("Course: Advanced Python Programming")
 
-        // Display details
-        s1.display();
-        System.out.println();
-        s2.display();
+# Creating objects
+s1 = Student("Alice", 20)
+s2 = Student("Bob", 16)
 
-        // Changing class variable
-        System.out.println("\nChanging School Name...\n");
-        Student.changeSchool("Global Public School");
+s1.display()
+print("Is Adult:", s1.is_adult())
 
-        s1.display();
-        System.out.println();
-        s2.display();
-    }
-}
+print()
+s2.display()
+print("Is Adult:", s2.is_adult())
+
+print("\n===== USING CLASS METHOD =====")
+Student.change_school("Global Public School")
+
+s1.display()
+print()
+s2.display()
+
+print("\n===== USING STATIC METHOD =====")
+Student.course_info()
