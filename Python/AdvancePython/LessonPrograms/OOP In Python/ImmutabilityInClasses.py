@@ -1,7 +1,35 @@
-# IMMUTABILITY IN CLASSES
-# ---------------------------------------------
+# IMMUTABILITY IN CLASSES IN PYTHON
+# --------------------------------------------------
 
-print("\n===== DEFAULT MUTABLE CLASS =====")
+# ---------------- Introduction ----------------
+print("\n===== IMMUTABILITY IN CLASSES =====")
+print("""
+Immutability means:
+An object cannot be changed after it is created.
+
+Immutable built-in types:
+✔ int
+✔ float
+✔ str
+✔ tuple
+
+In OOP, we can design our own
+immutable classes to prevent modification
+after object creation.
+
+Immutability helps in:
+✔ Data safety
+✔ Thread safety
+✔ Predictable behavior
+✔ Avoiding accidental changes
+""")
+
+# ---------------- Mutable Class Example ----------------
+print("\n===== MUTABLE CLASS EXAMPLE =====")
+print("""
+By default, class objects are mutable.
+Their attributes can be modified.
+""")
 
 class Person:
     def __init__(self, name, age):
@@ -9,15 +37,26 @@ class Person:
         self.age = age
 
 p = Person("Aditya", 21)
-print("Before:", p.age)
 
-p.age = 25   # Modification allowed
-print("After:", p.age)
+print("Before modification:", p.name, p.age)
 
+p.age = 25   # modifying attribute
 
-print("\n===== IMMUTABLE USING PRIVATE ATTRIBUTES =====")
+print("After modification:", p.name, p.age)
 
-class SafePerson:
+print("""
+Attributes were modified successfully.
+This class is mutable.
+""")
+
+# ---------------- Creating Immutable Class Using Private Attributes ----------------
+print("\n===== IMMUTABLE CLASS USING PRIVATE ATTRIBUTES =====")
+print("""
+We can make attributes private
+and provide only getter methods.
+""")
+
+class ImmutablePerson:
     def __init__(self, name, age):
         self.__name = name
         self.__age = age
@@ -28,14 +67,24 @@ class SafePerson:
     def get_age(self):
         return self.__age
 
-sp = SafePerson("Sneha", 22)
-print("Name:", sp.get_name())
-print("Age:", sp.get_age())
+ip = ImmutablePerson("Sneha", 22)
 
-# sp.__age = 30  # Not directly accessible
+print("Name:", ip.get_name())
+print("Age:", ip.get_age())
 
+# ip.__age = 30   # Direct modification not allowed
 
-print("\n===== IMMUTABLE USING __setattr__ =====")
+print("""
+Private attributes cannot be accessed directly.
+Only getter methods are provided.
+""")
+
+# ---------------- Preventing Attribute Modification Using __setattr__ ----------------
+print("\n===== IMMUTABILITY USING __setattr__ =====")
+print("""
+We can override __setattr__ to block
+attribute changes after initialization.
+""")
 
 class FrozenPerson:
     def __init__(self, name, age):
@@ -46,15 +95,23 @@ class FrozenPerson:
         raise AttributeError("Object is immutable")
 
 fp = FrozenPerson("Ravi", 30)
-print("Frozen Name:", fp.name)
 
-try:
-    fp.age = 35   # Attempt modification
-except AttributeError as e:
-    print("Error:", e)
+print("Name:", fp.name)
+print("Age:", fp.age)
 
+# fp.age = 35   # This would raise an error
 
+print("""
+Attempting to modify attribute
+will raise an AttributeError.
+""")
+
+# ---------------- Using Dataclass for Immutability ----------------
 print("\n===== IMMUTABLE DATACLASS =====")
+print("""
+Dataclasses provide built-in support
+for immutability using frozen=True.
+""")
 
 from dataclasses import dataclass
 
@@ -63,10 +120,51 @@ class Student:
     name: str
     marks: int
 
-s1 = Student("Arjun", 90)
-s2 = Student("Arjun", 90)
+student = Student("Arjun", 90)
 
-print("Student:", s1)
-print("Are students equal?", s1 == s2)
+print("Student:", student)
 
-# s1.marks = 95  # Would raise error
+# student.marks = 95   # This would raise an error
+
+print("""
+frozen=True prevents modification
+of attributes after creation.
+""")
+
+# ---------------- Practical Example ----------------
+print("\n===== PRACTICAL EXAMPLE =====")
+
+class BankAccount:
+    def __init__(self, account_number, balance):
+        super().__setattr__("account_number", account_number)
+        super().__setattr__("balance", balance)
+
+    def __setattr__(self, key, value):
+        raise AttributeError("BankAccount object is immutable")
+
+account = BankAccount("ACC123", 10000)
+
+print("Account Number:", account.account_number)
+print("Balance:", account.balance)
+
+print("""
+Bank account details cannot be modified.
+This ensures financial data safety.
+""")
+
+# ---------------- Summary ----------------
+print("\n===== SUMMARY =====")
+print("""
+✔ Immutable objects cannot be changed after creation
+✔ Normal classes are mutable by default
+✔ Private attributes + getters improve safety
+✔ Overriding __setattr__ enforces immutability
+✔ Dataclass with frozen=True creates immutable class
+✔ Immutability improves data integrity and safety
+
+Immutability is useful in:
+✔ Financial systems
+✔ Configuration objects
+✔ Thread-safe applications
+✔ Large-scale system design
+""")
