@@ -1,19 +1,67 @@
-# FILE HANDLING WITH EXCEPTIONS
-# ---------------------------------------------
+# FILE HANDLING WITH EXCEPTIONS IN PYTHON
+# --------------------------------------------------
 
-print("\n===== BASIC FILE READING =====")
+# ---------------- Introduction ----------------
+print("\n===== FILE HANDLING WITH EXCEPTIONS =====")
+print("""
+When working with files, many errors can occur:
+
+✔ File may not exist
+✔ File may not open
+✔ Permission issues
+✔ Invalid data inside file
+
+To prevent crashes, we use:
+✔ try-except with file handling
+
+This makes programs:
+✔ Safe
+✔ Robust
+✔ User-friendly
+""")
+
+# ---------------- Problem Without Exception Handling ----------------
+print("\n===== WITHOUT EXCEPTION HANDLING =====")
+print("""
+If file does not exist:
+
+open("data.txt", "r")
+
+This causes:
+FileNotFoundError
+Program crashes.
+""")
+
+# ---------------- Basic File Handling with try-except ----------------
+print("\n===== BASIC try-except WITH FILE =====")
+
+try:
+    file = open("data.txt", "r")
+    content = file.read()
+    print("File Content:\n", content)
+    file.close()
+except FileNotFoundError:
+    print("Error: File not found!")
+
+# ---------------- Using with + try-except ----------------
+print("\n===== USING with + try-except =====")
 
 try:
     with open("data.txt", "r") as file:
-        print(file.read())
+        data = file.read()
+        print("Content:", data)
 except FileNotFoundError:
-    print("File not found!")
+    print("File does not exist!")
 
+print("""
+with ensures file closes automatically.
+""")
 
-print("\n===== MULTIPLE EXCEPTIONS =====")
+# ---------------- Handling Multiple Exceptions ----------------
+print("\n===== HANDLING MULTIPLE FILE ERRORS =====")
 
 try:
-    filename = "data.txt"
+    filename = input("Enter file name: ")
     with open(filename, "r") as file:
         print(file.read())
 except FileNotFoundError:
@@ -23,17 +71,18 @@ except PermissionError:
 except Exception as e:
     print("Other error:", e)
 
-
+# ---------------- Writing File Safely ----------------
 print("\n===== SAFE FILE WRITING =====")
 
 try:
     with open("output.txt", "w") as file:
-        file.write("Hello File")
-    print("Data written successfully")
+        data = input("Enter data to write: ")
+        file.write(data)
+    print("Data written successfully.")
 except Exception as e:
     print("Error while writing:", e)
 
-
+# ---------------- Reading Structured Data Safely ----------------
 print("\n===== SAFE DATA READING =====")
 
 try:
@@ -46,8 +95,13 @@ except ValueError:
 except FileNotFoundError:
     print("marks.txt not found!")
 
-
+# ---------------- Practical Example ----------------
 print("\n===== PRACTICAL EXAMPLE =====")
+
+print("""
+Problem:
+Read user data safely and display it
+""")
 
 try:
     with open("user.txt", "r") as file:
@@ -60,4 +114,35 @@ try:
 except FileNotFoundError:
     print("User file missing!")
 except ValueError:
-    print("Invalid data format!")
+    print("Invalid data format in file!")
+
+# ---------------- Real-World Use Cases ----------------
+print("\n===== REAL-WORLD USE CASES =====")
+print("""
+✔ Opening config files safely
+✔ Reading logs without crashing
+✔ Handling missing data files
+✔ Processing user-uploaded files
+✔ Preventing system crashes
+""")
+
+# ---------------- Important Notes ----------------
+print("\n===== IMPORTANT NOTES =====")
+print("""
+✔ Always use try-except with files
+✔ Handle specific exceptions
+✔ Use 'with' for safe file handling
+✔ Prevent program crashes
+""")
+
+# ---------------- Summary ----------------
+print("\n===== SUMMARY =====")
+print("""
+✔ File operations can fail
+✔ try-except handles errors safely
+✔ with ensures proper file closing
+✔ Multiple exceptions improve robustness
+
+File handling + exceptions is essential
+for real-world applications.
+""")
