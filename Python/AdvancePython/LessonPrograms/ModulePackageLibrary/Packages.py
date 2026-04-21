@@ -1,5 +1,4 @@
 # PACKAGES IN PYTHON
-# ---------------------------------------------
 
 print("\n===== PACKAGE CONCEPT =====")
 print("A package = folder of modules")
@@ -37,3 +36,4 @@ project/
         math_utils.py
         file_utils.py
 """)
+
