@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // Primary data types
+
+    int age = 23;              // Integer type
+    float pi = 3.14;           // Float type
+    double big = 123456.789;   // Double type
+    char grade = 'A';          // Character type
+    bool isStudent = true;     // Boolean type
+
+    // Displaying values
+    cout << "Integer (age): " << age << endl;
+    cout << "Float (pi): " << pi << endl;
+    cout << "Double (big): " << big << endl;
+    cout << "Character (grade): " << grade << endl;
+    cout << "Boolean (isStudent): " << isStudent << endl;
+
+    return 0;
+}
