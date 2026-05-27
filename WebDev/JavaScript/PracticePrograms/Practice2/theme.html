@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Theme Recommendation</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Theme Recommendation 🎨</h1>
+
+            <select id="mood">
+                <option value="calm">Calm</option>
+                <option value="energetic">Energetic</option>
+                <option value="focus">Focus</option>
+            </select>
+
+            <button onclick="recommendTheme()">Recommend Theme</button>
+            <div class="result" id="result">Waiting for mood selection...</div>
+        </div>
+
+        <script src="theme.js"></script>
+    </body>
+</html>
