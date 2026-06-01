@@ -1,1 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Event Ticket Booking</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🎟️ Event Ticket Booking</h1>
+                <p>Book tickets for the Frontend Developer Summit 2026</p>
+            </div>
+
+            <div class="booking-form">
+                <input type="text" id="name" placeholder="Enter Your Name" />
+                <input type="number" id="age" placeholder="Enter Your Age" />
+                <input
+                    type="number"
+                    id="tickets"
+                    placeholder="Number of Tickets" />
+
+                <button onclick="bookTickets()">Book Tickets</button>
+            </div>
+
+            <div id="summary" class="summary">Waiting for booking...</div>
+            <div id="ticketArea" class="ticket-area"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
