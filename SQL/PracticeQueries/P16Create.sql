@@ -1,0 +1,21 @@
+-- CREATE A DATABASE FOR SCHOOL MANAGEMENT
+CREATE DATABASE school_db;
+
+-- SELECT THE DATABASE TO WORK INSIDE IT
+USE school_db;
+
+-- CREATE A STUDENTS TABLE
+-- This table stores student information
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(100) NOT NULL,
+    age INT,
+    city VARCHAR(50),
+    joining_date DATE
+);
+
+-- VIEW ALL TABLES INSIDE THE DATABASE
+SHOW TABLES;
+
+-- VIEW THE STRUCTURE OF THE TABLE
+DESC students;
