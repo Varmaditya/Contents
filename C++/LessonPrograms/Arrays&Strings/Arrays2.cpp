@@ -3,20 +3,12 @@ using namespace std;
 
 int main() {
 
-    // Integer array
-    int numbers[3] = {10, 20, 30};
+    int numbers[3] = {10, 20, 30};     // Integer array
+    float prices[3] = {99.5, 150.75, 200.25};    // Float array
+    char grades[3] = {'A', 'B', 'C'};    // Character array
+    bool status[3] = {true, false, true};    // Boolean array
+    string names[3] = {"Aditya", "Rahul", "Aman"};    // String array
 
-    // Float array
-    float prices[3] = {99.5, 150.75, 200.25};
-
-    // Character array
-    char grades[3] = {'A', 'B', 'C'};
-
-    // Boolean array
-    bool status[3] = {true, false, true};
-
-    // String array
-    string names[3] = {"Aditya", "Rahul", "Aman"};
 
     // Displaying integer array
     cout << "Integer Array:\n";

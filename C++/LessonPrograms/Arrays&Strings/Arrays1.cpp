@@ -17,10 +17,7 @@ int main() {
     cout << "Marks stored in array:\n";
 
     for (int i = 0; i < 5; i++) {
-
-        cout << "marks[" << i << "] = "
-             << marks[i] << endl;
-
+        cout << "marks[" << i << "] = " << marks[i] << endl;
     }
 
     return 0;

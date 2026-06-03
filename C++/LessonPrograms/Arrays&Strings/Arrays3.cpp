@@ -16,8 +16,7 @@ int main() {
     cout << "\nElements in the array are:\n";
 
     for (int i = 0; i < 5; i++) {
-        cout << "numbers[" << i << "] = "
-             << numbers[i] << endl;
+        cout << "numbers[" << i << "] = " << numbers[i] << endl;
     }
 
     return 0;
