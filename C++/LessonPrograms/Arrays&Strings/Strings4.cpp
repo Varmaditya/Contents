@@ -17,11 +17,9 @@ int main() {
     cout << "Full Name: " << fullName << endl;
 
     // Length / Size
-    cout << "\nLength: "
-         << fullName.length() << endl;
+    cout << "\nLength: " << fullName.length() << endl;
 
-    cout << "Size: "
-         << fullName.size() << endl;
+    cout << "Size: " << fullName.size() << endl;
 
     // Accessing characters
     cout << "\nFirst Character: "
