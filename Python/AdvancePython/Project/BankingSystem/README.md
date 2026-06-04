@@ -73,3 +73,76 @@ The system supports multiple user roles including Administrators, Employees, and
 * Exception Handling
 * Modules & Packages
 * Python Standard Library
+
+
+
+File Structure:
+
+banking_system/
+│
+├── main.py
+│
+├── auth/
+│   ├── __init__.py
+│   └── auth_manager.py
+│
+├── users/
+│   ├── __init__.py
+│   ├── user.py
+│   ├── admin.py
+│   ├── employee.py
+│   └── customer.py
+│
+├── customer_management/
+│   ├── __init__.py
+│   └── customer_manager.py
+│
+├── accounts/
+│   ├── __init__.py
+│   ├── account.py
+│   ├── savings_account.py
+│   ├── current_account.py
+│   └── account_manager.py
+│
+├── transactions/
+│   ├── __init__.py
+│   ├── transaction.py
+│   └── transaction_manager.py
+│
+├── loans/
+│   ├── __init__.py
+│   ├── loan.py
+│   └── loan_manager.py
+│
+├── cards/
+│   ├── __init__.py
+│   ├── card.py
+│   └── card_manager.py
+│
+├── reports/
+│   ├── __init__.py
+│   └── report_generator.py
+│
+├── storage/
+│   ├── __init__.py
+│   └── json_storage.py
+│
+├── exceptions/
+│   ├── __init__.py
+│   └── banking_exceptions.py
+│
+├── utils/
+│   ├── __init__.py
+│   └── helpers.py
+│
+├── data/
+│   ├── admins.json
+│   ├── employees.json
+│   ├── customers.json
+│   ├── accounts.json
+│   ├── transactions.json
+│   ├── loans.json
+│   ├── cards.json
+│   └── logs.json
+│
+└── backups/
