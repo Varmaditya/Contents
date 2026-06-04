@@ -84,7 +84,7 @@ banking_system/
 │
 ├── auth/
 │   ├── __init__.py
-│   └── auth_manager.py
+│   └── AuthManager.py
 │
 ├── users/
 │   ├── __init__.py
@@ -95,19 +95,19 @@ banking_system/
 │
 ├── customer_management/
 │   ├── __init__.py
-│   └── customer_manager.py
+│   └── CustomerManager.py
 │
 ├── accounts/
 │   ├── __init__.py
 │   ├── account.py
-│   ├── savings_account.py
-│   ├── current_account.py
-│   └── account_manager.py
+│   ├── SavingsAccount.py
+│   ├── CurrentAccount.py
+│   └── AccountManager.py
 │
 ├── transactions/
 │   ├── __init__.py
 │   ├── transaction.py
-│   └── transaction_manager.py
+│   └── TransactionManager.py
 │
 ├── loans/
 │   ├── __init__.py
