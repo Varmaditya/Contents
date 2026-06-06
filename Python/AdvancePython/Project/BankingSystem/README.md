@@ -77,7 +77,7 @@ The system supports multiple user roles including Administrators, Employees, and
 
 
 File Structure:
-
+```
 banking_system/
 │
 ├── main.py                      # Application Entry Point
@@ -135,3 +135,4 @@ banking_system/
 │   └── logs.json
 │
 └── backups/                     # System Backups
+```
