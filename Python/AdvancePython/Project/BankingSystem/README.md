@@ -80,51 +80,62 @@ File Structure:
 ```
 banking_system/
 │
-├── main.py                      # Application Entry Point
+├── main.py                        # Application Entry Point
 │
-├── auth/                        # Authentication & Login
+├── auth/                          # Authentication & Login
+│   ├── __init__.py
 │   └── AuthManager.py
 │
-├── users/                       # User Classes
+├── users/                         # User Classes
+│   ├── __init__.py
 │   ├── User.py
 │   ├── Admin.py
 │   ├── Employee.py
 │   └── Customer.py
 │
 ├── customer_management/         # Customer Operations
+│   ├── __init__.py
 │   └── CustomerManager.py
 │
 ├── accounts/                    # Account Operations
+│   ├── __init__.py
 │   ├── Account.py
 │   ├── SavingsAccount.py
 │   ├── CurrentAccount.py
 │   └── AccountManager.py
 │
 ├── transactions/                # Transaction Processing
+│   ├── __init__.py
 │   ├── Transaction.py
 │   └── TransactionManager.py
 │
 ├── loans/                       # Loan Management
+│   ├── __init__.py
 │   ├── Loan.py
 │   └── LoanManager.py
 │
 ├── cards/                       # Debit/Credit Cards
+│   ├── __init__.py
 │   ├── Card.py
 │   └── CardManager.py
 │
-├── reports/                     # Reports & Analytics
+├── reports/                    # Reports & Analytics
+│   ├── __init__.py
 │   └── ReportGenerator.py
 │
-├── storage/                     # Data Persistence
+├── storage/                    # Data Persistence
+│   ├── __init__.py
 │   └── JSONStorage.py
 │
-├── exceptions/                  # Custom Exceptions
+├── exceptions/                # Custom Exceptions
+│   ├── __init__.py
 │   └── BankingExceptions.py
 │
-├── utils/                       # Helper Functions
+├── utils/                     # Helper Functions
+│   ├── __init__.py
 │   └── Helpers.py
 │
-├── data/                        # JSON Database Files
+├── data/                      # JSON Database Files
 │   ├── admins.json
 │   ├── employees.json
 │   ├── customers.json
@@ -134,5 +145,5 @@ banking_system/
 │   ├── cards.json
 │   └── logs.json
 │
-└── backups/                     # System Backups
+└── backups/                  # System Backups
 ```
