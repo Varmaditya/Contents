@@ -1,9 +1,7 @@
-/* Reverses a series of numbers */
-
 #include <stdio.h>
 #define N 10
 
-int main(void) {
+int main() {
     int a[N], i;
 
     printf("Enter %d numbers: ", N);

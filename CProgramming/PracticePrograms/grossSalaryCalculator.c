@@ -1,9 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void main() {
-    float basic,hra,da,gross;
+int main() {
+    float basic, hra, da, gross;
 
-    printf("Enter the Basic Salary : $");
+    printf("Enter the Basic Salary: $");
     scanf("%f", &basic);
 
     hra = 40 * basic / 100;
@@ -11,4 +11,6 @@ void main() {
     gross = basic + hra + da;
 
     printf("Gross Salary is $%f", gross);
+
+    return 0;
 }

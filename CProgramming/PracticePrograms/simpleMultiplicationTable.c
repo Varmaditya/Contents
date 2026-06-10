@@ -1,11 +1,9 @@
-/*Program to display multiplication table*/
-
 #include <stdio.h>
 
 int main() {
     int num, i = 1;
 
-    printf("Enter a number to calculate the multiplication table up to 10: \n");
+    printf("Enter a number to calculate table of: \n");
     scanf("%d", &num);
 
 	for(i = 1; i <= 10; i++) {

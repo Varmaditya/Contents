@@ -1,13 +1,11 @@
-/*Program to show if the number is Automorphic*/
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
 
 int main() {
-    int num, sqr, temp, last,n = 0;
+    int num, sqr, temp, last, n = 0;
 
-    printf("Enter a number \n");
+    printf("Enter a number: ");
     scanf("%d", &num);
     sqr = num * num; //calculating square of num
     temp = num;

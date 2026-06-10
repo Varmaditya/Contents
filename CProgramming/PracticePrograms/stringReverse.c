@@ -1,7 +1,5 @@
-/*Program to reverse a string*/
-
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 void main() {
     int i, j, k;

@@ -1,5 +1,3 @@
-/*Program to output digits in words*/
-
 #include <stdio.h>
 
 int main() {

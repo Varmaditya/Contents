@@ -1,6 +1,4 @@
-/*Program to check for leap year using ternary operator*/
-
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
     int y;
@@ -9,7 +7,7 @@ int main() {
     scanf("%d",&y);
 
     //Using ternary operator
-    (((y % 100 != 0) && (y % 4 == 0))||(y % 400 == 0)) ?
+    (((y % 100 != 0) && (y % 4 == 0)) || (y % 400 == 0)) ?
         printf("Your input (%d) is a leap year.",y) :
         printf("Your input (%d) is NOT a leap year.",y);
 

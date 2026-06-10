@@ -1,12 +1,10 @@
-/*Greatest number using nested if statement*/
+#include <stdio.h>
 
-#include<stdio.h>
+int main() {
+    int a, b, c;
 
-int main()
-{
-    int a,b,c;
     printf("Enter three integer number: ");
-    scanf("%d %d %d",&a,&b,&c);
+    scanf("%d %d %d", &a, &b, &c);
 
     if(a>b) {
         if(a>c)
@@ -19,5 +17,6 @@ int main()
         else
             printf("%d is greatest", c);
     }
+
     return 0;
 }

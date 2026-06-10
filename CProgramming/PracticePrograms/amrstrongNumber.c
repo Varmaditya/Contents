@@ -1,5 +1,3 @@
-/* Function to check Armstrong number*/
-
 #include <stdio.h>
 #include <math.h>
 
@@ -11,6 +9,7 @@ int isArmstrong(int n) {
         digits++;
         temp /= 10;
     }
+
     temp = n;
     while(temp != 0) {
         int r = temp % 10;
@@ -26,10 +25,11 @@ int isArmstrong(int n) {
 
 int main() {
     int num;
+
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if(isArmstrong(num))
+    if (isArmstrong(num))
         printf("%d is an Armstrong number", num);
     else
         printf("%d is NOT an Armstrong number", num);

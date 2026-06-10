@@ -1,5 +1,3 @@
-/*Program for simple calculator*/
-
 #include <stdio.h>
 
 int main() {
@@ -26,29 +24,24 @@ int main() {
             result = num1 + num2;
             printf("Result = %.2f\n", result);
             break;
-
         case 2:
             result = num1 - num2;
             printf("Result = %.2f\n", result);
             break;
-
         case 3:
             result = num1 * num2;
             printf("Result = %.2f\n", result);
             break;
-
         case 4:
             if (num2 != 0)
                 printf("Result = %.2f\n", num1 / num2);
             else
                 printf("Error! Division by zero not allowed.\n");
             break;
-
         case 5:
             // Modulus only makes sense for integers
             printf("Result = %d\n", (int)num1 % (int)num2);
             break;
-
         default:
             printf("Invalid choice! Please enter between 1 and 5.\n");
     }

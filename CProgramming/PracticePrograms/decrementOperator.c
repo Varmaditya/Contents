@@ -1,9 +1,7 @@
-// Decrement operator
-
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
-    int a= 8;
+    int a = 8;
     int b, c, d;
 
     printf("Value of a = %d\n", a);

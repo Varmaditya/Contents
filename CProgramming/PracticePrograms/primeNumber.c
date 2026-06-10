@@ -1,6 +1,4 @@
-/*Program to check if the number is prime*/
-
-#include<stdio.h>
+#include <stdio.h>
 
 void main() {
     int i, n, c = 0;
@@ -17,5 +15,5 @@ void main() {
     }
 
     if(c == 0)
-        printf("%d is a prime number",n);
+        printf("%d is a prime number", n);
 }

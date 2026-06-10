@@ -1,5 +1,3 @@
-/* Tests whether a number is prime */
-
 #include <stdbool.h>
 #include <stdio.h>
 
@@ -17,11 +15,12 @@ bool isPrime(int n) {
     return true;
 }
 
-int main(void) {
+int main() {
     int n;
 
     printf("Enter a number: ");
     scanf("%d", &n);
+
     if (isPrime(n))
         printf("Prime\n");
     else

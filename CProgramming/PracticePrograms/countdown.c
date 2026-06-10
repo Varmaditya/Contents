@@ -1,13 +1,12 @@
-/* Prints a countdown */
-
 #include <stdio.h>
 
 void printCount(int n) {
     printf("T minus %d and counting\n", n);
 }
 
-int main(void) {
+int main() {
     int i, n;
+
     printf("Enter the number to start countdown from: ");
     scanf("%d", &n);
 

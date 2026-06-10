@@ -1,8 +1,6 @@
-/* Determines the length of a message */
-
 #include <stdio.h>
 
-int main(void){
+int main() {
     char ch;
     int len = 0;
 
@@ -13,6 +11,7 @@ int main(void){
         len++;
         ch = getchar();
     }
+
     printf("Your message was %d character(s) long.\n", len);
 
     return 0;

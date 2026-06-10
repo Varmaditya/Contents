@@ -1,15 +1,13 @@
-/* Converts a Celsius temperature to Fahrenheit */
-
-#include<stdio.h>
+#include <stdio.h>
 
 #define FREEZING_PT 32.0f
 #define SCALE_FACTOR (9.0f / 5.0f)
 
 int main() {
-    float celsius,fahrenheit;
+    float celsius, fahrenheit;
 
-    printf("Enter the Temperature in Celcius : ");
-    scanf("%f",&celsius);
+    printf("Enter the Temperature in Celcius: ");
+    scanf("%f", &celsius);
 
     fahrenheit = SCALE_FACTOR * celsius + FREEZING_PT;
 

@@ -1,40 +1,39 @@
-/* Balances a checkbook */
-
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int cmd;
     float balance = 0.0f, credit, debit;
 
-    printf("*** ACME checkbook-balancing program ***\n");
-    printf("Commands: 0=clear, 1=credit, 2=debit, ");
-    printf("3=balance, 4=exit\n\n");
+    printf("*** BANK CHECKBOOK ***\n");
+    printf("Commands: \n1.Clear \n1.Credit \n2.Debit \n");
+    printf("3.Balance \n4.Exit\n\n");
 
     for (;;) {
         printf("Enter command: ");
         scanf("%d", &cmd);
+
         switch (cmd) {
-            case 0:
+            case 1:
                 balance = 0.0f;
                 break;
-            case 1:
+            case 2:
                 printf("Enter amount of credit: ");
                 scanf("%f", &credit);
                 balance += credit;
                 break;
-            case 2:
+            case 3:
                 printf("Enter amount of debit: ");
                 scanf("%f", &debit);
                 balance -= debit;
                 break;
-          case 3:
+            case 4:
                 printf("Current balance: $%.2f\n", balance);
                 break;
-          case 4:
+            case 5:
                 return 0;
-          default:
-                printf("Commands: 0=clear, 1=credit, 2=debit, ");
-                printf("3=balance, 4=exit\n\n");
+            default:
+                printf("Commands: \n0=clear \n1=credit \n2=debit \n");
+                printf("3=balance \n4=exit\n\n");
                 break;
         }
     }

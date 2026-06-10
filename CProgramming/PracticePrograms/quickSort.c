@@ -1,5 +1,4 @@
 /* Sorts an array of integers using Quicksort algorithm */
-
 #include <stdio.h>
 
 #define N 10
@@ -7,7 +6,7 @@
 void quicksort(int a[], int low, int high);
 int split(int a[], int low, int high);
 
-int main(void) {
+int main() {
     int a[N], i;
 
     printf("Enter %d numbers to be sorted: ", N);
@@ -25,11 +24,12 @@ int main(void) {
 
     return 0;
 }
-/* Sorts an array of integers using Quicksort algorithm */
+
 void quicksort(int a[], int low, int high) {
     int middle;
 
     if (low >= high) return;
+
     middle = split(a, low, high);
     quicksort(a, low, middle - 1);
     quicksort(a, middle + 1, high);

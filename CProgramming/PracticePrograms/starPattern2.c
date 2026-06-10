@@ -1,9 +1,8 @@
-/*Program to print pattern*/
-
 #include <stdio.h>
 
 int main() {
     int n, i, j, space;
+
     printf("Enter number of rows: ");
     scanf("%d", &n);
 

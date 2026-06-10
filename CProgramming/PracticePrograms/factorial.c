@@ -1,5 +1,3 @@
-/*Program to output Factorial number*/
-
 #include <stdio.h>
 
 // Function to calculate factorial
@@ -20,5 +18,6 @@ int main() {
     scanf("%d", &num);
 
     printf("Factorial of %d = %d", num, factorial(num));
+
     return 0;
 }
