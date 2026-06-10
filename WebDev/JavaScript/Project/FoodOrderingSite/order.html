@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Order Food | Foodie Express</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/order.css" />
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">Foodie Express</div>
+
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="menu.html"> Menu </a>
+                    </li>
+                    <li>
+                        <a href="order.html" class="active"> Order </a>
+                    </li>
+                    <li>
+                        <a href="profile.html"> Profile </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- PAGE HEADING -->
+        <section class="page-banner">
+            <h1>Place Your Order 🛒</h1>
+            <p>Select your favorite food and get it delivered fast.</p>
+        </section>
+
+        <!-- ORDER FORM -->
+        <section class="order-section">
+            <div class="order-container">
+                <div class="order-form">
+                    <h2>Customer Details</h2>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter Your Name" />
+
+                    <select id="foodItem">
+                        <option value="199">Classic Burger - ₹199</option>
+                        <option value="349">Cheese Pizza - ₹349</option>
+                        <option value="299">Chicken Biryani - ₹299</option>
+                        <option value="149">French Fries - ₹149</option>
+                        <option value="129">Chocolate Shake - ₹129</option>
+                    </select>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        placeholder="Enter Quantity" />
+
+                    <button onclick="calculateOrder()">Calculate Bill</button>
+
+                    <button onclick="placeOrder()" class="order-btn">
+                        Place Order
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BILL SUMMARY -->
+        <section class="summary-section">
+            <div class="summary-card">
+                <h2>Order Summary</h2>
+
+                <div id="orderSummary">
+                    <p>Fill the form and calculate your bill.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCOUNT INFO -->
+        <section class="discount-section">
+            <div class="discount-card">
+                <h2>🎁 Discount Rules</h2>
+
+                <ul>
+                    <li>Orders above ₹1000 get 10% discount.</li>
+                    <li>Orders above ₹2000 get 15% discount.</li>
+                    <li>Orders above ₹3000 get 20% discount.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <h3>🍔 Foodie Express</h3>
+                <p>Delicious food. Delivered with love.</p>
+                <p>© 2026 Foodie Express. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/order.js"></script>
+    </body>
+</html>
