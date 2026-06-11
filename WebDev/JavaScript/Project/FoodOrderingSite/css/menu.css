@@ -1,0 +1,66 @@
+.menu-filters{
+    text-align:center;
+    padding:60px 8%;
+}
+
+.filter-buttons{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.menu-section{
+    padding:60px 8%;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+.menu-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-content{
+    padding:20px;
+}
+
+.food-price{
+    color:#f97316;
+    font-weight:700;
+    font-size:20px;
+    margin-top:10px;
+}
+
+.special-offer{
+    padding:60px 8%;
+}
+
+.offer-box{
+    background: linear-gradient(
+    135deg,
+    #f97316,
+    #fb7185);
+    color:white;
+    text-align:center;
+    padding:50px;
+    border-radius:25px;
+}
