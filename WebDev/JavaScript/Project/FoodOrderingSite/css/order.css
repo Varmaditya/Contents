@@ -1,0 +1,50 @@
+.order-section{
+    padding:80px 8%;
+}
+
+.order-container{
+    max-width:700px;
+    margin:auto;
+}
+
+.order-form{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.order-form h2{
+    margin-bottom:25px;
+    color:#f97316;
+}
+
+.summary-section{
+    padding:20px 8%;
+}
+
+.summary-card{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.discount-section{
+    padding:40px 8%;
+}
+
+.discount-card{
+    max-width:700px;
+    margin:auto;
+    background:#fff7ed;
+    border-left:6px solid #f97316;
+    padding:30px;
+    border-radius:15px;
+}
+
+.discount-card ul{
+    padding-left:25px;
+}
