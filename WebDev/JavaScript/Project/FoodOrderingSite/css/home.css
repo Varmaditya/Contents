@@ -1,0 +1,109 @@
+.hero{
+    min-height:80vh;
+    background: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("../images/hero/hero-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    max-width:800px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.about,
+.featured-foods,
+.features{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    color:#f97316;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.food-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.food-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.food-card:hover{
+    transform:translateY(-8px);
+}
+
+.food-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.food-card h3{
+    padding:20px 20px 10px;
+}
+
+.food-card p{
+    padding:0 20px 20px;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:white;
+    text-align:center;
+    padding:40px;
+    border-radius:20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.cta{
+    background: linear-gradient(
+    135deg,
+    #f97316,
+    #fb7185);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta h2{
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
