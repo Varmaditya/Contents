@@ -13,29 +13,19 @@ class JSONStorage:
         try:
             # Create file if it doesn't exist
             if not os.path.exists(file_name):
-
                 with open(file_name, "w") as file:
-
                     json.dump([], file)
 
             with open(file_name, "r") as file:
-
                 data = json.load(file)
-
                 return data
 
         except json.JSONDecodeError:
-
-            print(
-                f"Error reading {file_name}"
-            )
-
+            print( f"Error reading {file_name}" )
             return []
 
         except Exception as error:
-
             print("Unexpected Error:", error)
-
             return []
 
     # SAVE DATA TO JSON FILE
@@ -43,9 +33,7 @@ class JSONStorage:
     def save_data(file_name, data):
 
         try:
-
             with open(file_name, "w") as file:
-
                 json.dump(
                     data,
                     file,
@@ -53,7 +41,6 @@ class JSONStorage:
                 )
 
         except Exception as error:
-
             print("Save Error:", error)
 
     # APPEND SINGLE RECORD
@@ -109,13 +96,10 @@ class JSONStorage:
         )
 
         if not data:
-
             print("No Data Found.")
-
             return
 
         print("\n===== FILE DATA =====")
 
         for record in data:
-
             print(record)
