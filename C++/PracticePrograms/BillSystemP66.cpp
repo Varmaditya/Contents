@@ -56,11 +56,9 @@ int main() {
     cout<<"Quantity : ";
     cin>>quantity;
 
-    float totalBill =
-    calculateBill(prices[foodChoice-1],quantity);
+    float totalBill = calculateBill(prices[foodChoice-1],quantity);
 
-    float discount =
-    applyDiscount(totalBill);
+    float discount = applyDiscount(totalBill);
 
     printReceipt(totalBill, discount, totalBill-discount);
 }
