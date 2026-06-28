@@ -13,19 +13,14 @@ int main() {
     cout << "Enter Message: ";
     getline(cin, message);
 
-    char *characterPointer =
-    &message[0];
+    char *characterPointer = &message[0];
 
     while(*characterPointer != '\0') {
-
-        *characterPointer =
-        *characterPointer + 3;
-
+        *characterPointer = *characterPointer + 3;
         characterPointer++;
     }
 
     cout << "\nEncrypted Message:\n";
-
     cout << message;
 
     return 0;

@@ -8,18 +8,14 @@ using namespace std;
 
 int main() {
 
-    int luckyNumbers[10] =
-    {7, 12, 25, 30, 45, 56, 68, 77, 89, 99};
-
+    int luckyNumbers[10] = {7, 12, 25, 30, 45, 56, 68, 77, 89, 99};
     int searchNumber;
-
     bool found = false;
 
     cout << "Enter a number to search: ";
     cin >> searchNumber;
 
     for (int index = 0; index < 10; index++) {
-
         if (luckyNumbers[index] == searchNumber) {
             found = true;
         }
@@ -27,8 +23,7 @@ int main() {
 
     if (found) {
         cout << "Lucky Number Found!" << endl;
-    }
-    else {
+    } else {
         cout << "Lucky Number Not Found!" << endl;
     }
 

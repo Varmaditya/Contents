@@ -16,7 +16,6 @@ int main() {
     cout << "Enter Product Name and Price:\n";
 
     for(int index = 0; index < 5; index++) {
-
         cin >> productNames[index];
         cin >> productPrices[index];
 
@@ -26,15 +25,10 @@ int main() {
     cout << "\n----- CART -----\n";
 
     for(int index = 0; index < 5; index++) {
-
-        cout << productNames[index]
-             << " - ₹"
-             << productPrices[index]
-             << endl;
+        cout << productNames[index] << " - $" << productPrices[index] << endl;
     }
 
-    cout << "\nTotal Bill = ₹"
-         << totalBill << endl;
+    cout << "\nTotal Bill = $" << totalBill << endl;
 
     return 0;
 }

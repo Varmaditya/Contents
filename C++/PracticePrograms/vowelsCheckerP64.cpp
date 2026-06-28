@@ -14,24 +14,14 @@ int main() {
 
     getline(cin, message);
 
-    char *messagePointer =
-    &message[0];
+    char *messagePointer = &message[0];
 
     int vowelCount = 0;
 
     while(*messagePointer != '\0') {
 
-        if(*messagePointer == 'a' ||
-           *messagePointer == 'e' ||
-           *messagePointer == 'i' ||
-           *messagePointer == 'o' ||
-           *messagePointer == 'u' ||
-
-           *messagePointer == 'A' ||
-           *messagePointer == 'E' ||
-           *messagePointer == 'I' ||
-           *messagePointer == 'O' ||
-           *messagePointer == 'U') {
+        if(*messagePointer == 'a' || *messagePointer == 'e' || *messagePointer == 'i' || *messagePointer == 'o' || *messagePointer == 'u' ||
+           *messagePointer == 'A' || *messagePointer == 'E' || *messagePointer == 'I' || *messagePointer == 'O' || *messagePointer == 'U') {
 
             vowelCount++;
         }
@@ -39,9 +29,7 @@ int main() {
         messagePointer++;
     }
 
-    cout << "\nVowels Found: "
-         << vowelCount
-         << endl;
+    cout << "\nVowels Found: " << vowelCount << endl;
 
     return 0;
 }

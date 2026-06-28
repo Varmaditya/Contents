@@ -9,16 +9,12 @@ using namespace std;
 int main() {
 
     int seats[10] = {0};
-
     int seatNumber;
 
     cout << "Available Seats:\n";
 
     for(int index = 0; index < 10; index++) {
-
-        cout << "Seat "
-             << index + 1
-             << " : ";
+        cout << "Seat " << index + 1 << " : ";
 
         if(seats[index] == 0)
             cout << "Available";
@@ -36,10 +32,7 @@ int main() {
     cout << "\nUpdated Seat Status:\n";
 
     for(int index = 0; index < 10; index++) {
-
-        cout << "Seat "
-             << index + 1
-             << " : ";
+        cout << "Seat " << index + 1 << " : ";
 
         if(seats[index] == 0)
             cout << "Available";

@@ -17,7 +17,6 @@ int main() {
     cin >> password;
 
     for(int index = 0; index < password.length(); index++) {
-
         if(password[index] >= '0' && password[index] <= '9') {
             hasDigit = true;
         }

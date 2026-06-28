@@ -21,8 +21,7 @@ int main() {
         totalSteps += dailySteps[day];
     }
 
-    cout << "\nTotal Steps Walked = "
-         << totalSteps << endl;
+    cout << "\nTotal Steps Walked = " << totalSteps << endl;
 
     return 0;
 }
