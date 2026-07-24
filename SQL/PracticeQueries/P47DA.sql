@@ -11,6 +11,7 @@ USE RetailAnalytics;
 
 -- Step 3 Import CSV Files
 /*
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 Using MySQL Workbench
 1. Right Click Database
 2. Table Data Import Wizard
