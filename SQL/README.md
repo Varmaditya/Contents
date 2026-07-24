@@ -19,3 +19,30 @@ Instead, businesses collect data automatically through websites, mobile applicat
 Rather than recreating these records ourselves, we will import an existing dataset into MySQL. This allows us to work with realistic business data and experience a workflow similar to that followed by professional data analysts.
 Using a real dataset also introduces you to practical challenges such as understanding unfamiliar tables, interpreting column names, and discovering relationships between different entities.
 About the Dataset
+
+For this project, we will work with a real-world e-commerce dataset instead of creating small sample tables manually. Using an actual business dataset allows us to experience the same workflow followed by professional data analysts in the industry.
+The dataset chosen for this project is the Brazilian E-Commerce Public Dataset by Olist, one of the most popular datasets used for learning SQL, data analysis, and business intelligence.
+It contains real transactional data collected from an online marketplace, including information about customers, products, orders, sellers, payments, and reviews. The data is organized into multiple related CSV files, making it an excellent example of a relational database.
+The complete dataset can be downloaded from Kaggle using the following link:
+Dataset Name:
+Brazilian E-Commerce Public Dataset by Olist
+Author:
+Olist
+Download Link:
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce⁠�
+After opening the dataset page, click the Download button to download the ZIP file. Extract the ZIP archive to obtain all the CSV files.
+Dataset Files Required for This Project
+The original dataset contains several CSV files. However, for this mini project, we will focus on the following files:
+CSV File
+Purpose
+olist_customers_dataset.csv
+Stores customer information such as customer ID, city, and state.
+olist_products_dataset.csv
+Contains product details including product category, dimensions, and weight.
+olist_orders_dataset.csv
+Stores order information such as order status, purchase date, and delivery dates.
+olist_order_items_dataset.csv
+Contains information about the products included in each order.
+olist_order_payments_dataset.csv
+Stores payment details including payment type, installments, and payment value.
+These five datasets provide everything required to perform customer analysis, product analysis, sales reporting, payment analysis, and advanced SQL queries using JOINs and Subqueries
