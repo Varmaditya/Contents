@@ -19,99 +19,82 @@ USE RetailAnalytics;
 -- ====================================================
 
 -- Task 1 Display all customer records.
-SELECT * FROM olist_customers_dataset;
+SELECT * FROM customers;
 
 -- Task 2 Display only Customer ID, City and State.
 SELECT customer_id, customer_city, customer_state
-FROM olist_customers_dataset;
+FROM customers;
 
 -- Task 3 Display unique customer cities.
 SELECT DISTINCT customer_city
-FROM olist_customers_dataset;
+FROM customers;
 
 -- Task 4 Display unique customer states.
 SELECT DISTINCT customer_state
-FROM olist_customers_dataset;
+FROM customers;
 
 -- Task 5 Find customers belonging to São Paulo.
-SELECT *
-FROM olist_customers_dataset
+SELECT * FROM customers
 WHERE customer_city = 'sao paulo';
 
 -- Task 6 Find customers from Rio de Janeiro.
-SELECT *
-FROM olist_customers_dataset
+SELECT * FROM customers
 WHERE customer_city = 'rio de janeiro';
 
 -- Task 7 Display customers from São Paulo OR Rio de Janeiro.
-SELECT *
-FROM olist_customers_dataset
+SELECT * FROM customers
 WHERE customer_city IN ('sao paulo','rio de janeiro');
 
 -- Task 8 Display customers whose city starts with 's'.
-SELECT *
-FROM olist_customers_dataset
+SELECT * FROM customers
 WHERE customer_city LIKE 's%';
 
 -- Task 9 Display customers whose city ends with 'a'.
-SELECT *
-FROM olist_customers_dataset
+SELECT * FROM customers
 WHERE customer_city LIKE '%a';
 
 -- Task 10 Display first 20 customers.
-SELECT *
-FROM olist_customers_dataset
-LIMIT 20;
-
+SELECT * FROM customers LIMIT 20;
 
 -- ====================================================
 -- SECTION B : PRODUCT ANALYSIS
 -- ====================================================
 
 -- Task 11 Display all products.
-SELECT * FROM olist_products_dataset;
+SELECT * FROM products;
 
 -- Task 12 Display Product Category Names.
-SELECT product_category_name
-FROM olist_products_dataset;
+SELECT product_category_name FROM products;
 
 -- Task 13 Display unique product categories.
-SELECT DISTINCT product_category_name
-FROM olist_products_dataset;
+SELECT DISTINCT product_category_name FROM products;
 
 -- Task 14 Display products having category names starting with 'c'.
-SELECT *
-FROM olist_products_dataset
+SELECT * FROM products
 WHERE product_category_name LIKE 'c%';
 
 -- Task 15 Display products whose category contains the word 'fashion'.
-SELECT *
-FROM olist_products_dataset
+SELECT * FROM products
 WHERE product_category_name LIKE '%fashion%';
 
 -- Task 16 Display products having weight between 500 and 1500 grams.
-SELECT *
-FROM olist_products_dataset
+SELECT * FROM products
 WHERE product_weight_g BETWEEN 500 AND 1500;
 
 -- Task 17 Display products weighing more than 5000 grams.
-SELECT *
-FROM olist_products_dataset
+SELECT * FROM products
 WHERE product_weight_g > 5000;
 
 -- Task 18 Display products with missing category names.
-SELECT *
-FROM olist_products_dataset
+SELECT * FROM products
 WHERE product_category_name IS NULL;
 
 -- Task 19 Display products ordered by weight.
-SELECT *
-FROM olist_products_dataset
+SELECT * FROM products
 ORDER BY product_weight_g;
 
 -- Task 20 Display top 15 heaviest products.
-SELECT *
-FROM olist_products_dataset
+SELECT * FROM products
 ORDER BY product_weight_g DESC
 LIMIT 15;
 
@@ -120,53 +103,43 @@ LIMIT 15;
 -- ====================================================
 
 -- Task 21 Display all orders.
-SELECT * FROM olist_orders_dataset;
+SELECT * FROM orders;
 
 -- Task 22 Display delivered orders.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 WHERE order_status = 'delivered';
 
 -- Task 23 Display cancelled orders.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 WHERE order_status = 'canceled';
 
 -- Task 24 Display shipped orders.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 WHERE order_status = 'shipped';
 
 -- Task 25 Display orders placed in 2018.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 WHERE order_purchase_timestamp LIKE '2018%';
 
-
 -- Task 26 Display orders placed during January 2018.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 WHERE order_purchase_timestamp LIKE '2018-01%';
 
 -- Task 27 Display first 30 orders.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 LIMIT 30;
 
 -- Task 28 Display orders sorted by purchase date.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 ORDER BY order_purchase_timestamp;
 
 -- Task 29 Display latest 20 orders.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 ORDER BY order_purchase_timestamp DESC
 LIMIT 20;
 
 -- Task 30 Display orders whose status is either delivered or shipped.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 WHERE order_status IN ('delivered','shipped');
 
 -- ====================================================
@@ -174,31 +147,26 @@ WHERE order_status IN ('delivered','shipped');
 -- ====================================================
 
 -- Task 31 Display all payment records.
-SELECT * FROM olist_order_payments_dataset;
+SELECT * FROM order_payments;
 
 -- Task 32 Display unique payment methods.
 SELECT DISTINCT payment_type
-FROM olist_order_payments_dataset;
+FROM order_payments;
 
 -- Task 33 Display payments made using credit card.
-SELECT *
-FROM olist_order_payments_dataset
+SELECT * FROM order_payments
 WHERE payment_type = 'credit_card';
 
 -- Task 34 Display payments greater than 500.
-SELECT *
-FROM olist_order_payments_dataset
+SELECT * FROM order_payments
 WHERE payment_value > 500;
 
-
 -- Task 35 Display payments between 100 and 500.
-SELECT *
-FROM olist_order_payments_dataset
+SELECT * FROM order_payments
 WHERE payment_value BETWEEN 100 AND 500;
 
 -- Task 36 Display payments sorted from highest to lowest.
-SELECT *
-FROM olist_order_payments_dataset
+SELECT * FROM order_payments
 ORDER BY payment_value DESC;
 
 -- ====================================================
@@ -206,36 +174,34 @@ ORDER BY payment_value DESC;
 -- ====================================================
 
 -- Task 37 Display products having NULL weight.
-SELECT *
-FROM olist_products_dataset
+SELECT * FROM products
 WHERE product_weight_g IS NULL;
 
 -- Task 38 Display orders with non-null delivered dates.
-SELECT *
-FROM olist_orders_dataset
+SELECT * FROM orders
 WHERE order_delivered_customer_date IS NOT NULL;
 
 -- Task 39 Display first 10 records from every table for quick inspection.
-SELECT * FROM olist_customers_dataset LIMIT 10;
+SELECT * FROM customers LIMIT 10;
 
-SELECT * FROM olist_products_dataset LIMIT 10;
+SELECT * FROM products LIMIT 10;
 
-SELECT * FROM olist_orders_dataset LIMIT 10;
+SELECT * FROM orders LIMIT 10;
 
-SELECT * FROM olist_order_payments_dataset LIMIT 10;
+SELECT * FROM order_payments LIMIT 10;
 
 -- Task 40 Prepare a summary of available data. 
 SELECT COUNT(*) AS TotalCustomers
-FROM olist_customers_dataset;
+FROM customers;
 
 SELECT COUNT(*) AS TotalProducts
-FROM olist_products_dataset;
+FROM products;
 
 SELECT COUNT(*) AS TotalOrders
-FROM olist_orders_dataset;
+FROM orders;
 
 SELECT COUNT(*) AS TotalPayments
-FROM olist_order_payments_dataset;
+FROM order_payments;
 
 
 /*
