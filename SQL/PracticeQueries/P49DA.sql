@@ -167,20 +167,7 @@ Congratulations!
 You have successfully prepared
 business reports using
 
-COUNT()
-SUM()
-AVG()
-MIN()
-MAX()
-GROUP BY
-HAVING
-
 These reports help management
 understand the overall performance
 of the business.
-
-Next Program:
-
-Advanced Customer & Sales Analytics
-using JOINs and Subqueries.
 */
