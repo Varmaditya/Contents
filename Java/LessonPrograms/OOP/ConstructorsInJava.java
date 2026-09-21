@@ -12,7 +12,7 @@ class Student2 {
         name = "Unknown";
         age = 0;
     }
-
+ 
     // ---------------- Parameterized Constructor ----------------
     Student2(String name, int age) {
 
